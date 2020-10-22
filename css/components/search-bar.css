@@ -16,27 +16,26 @@
   border: none;
   background-color: var(--gray-5);
   color: var(--gray-100);
-  padding: 0 45px;
+  padding: 0 50px;
 }
 
 .search-bar__input:focus {
   outline: none;
 }
 
-.search-bar__search {
+.search-bar__icon {
   position: absolute;
   z-index: 1;
-  top: 12px;
-  left: 12px;
+  top: 9px;
   font-size: 32px;
+}
+
+.search-bar__icon--search {
+  left: 12px;
   color: var(--icons-color);
 }
 
-.search-bar__close {
-  position: absolute;
-  z-index: 1;
-  top: 12px;
+.search-bar__icon--close {
   right: 12px;
-  font-size: 32px;
   color: var(--blue-60);
 }

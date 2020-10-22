@@ -1,0 +1,24 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating__stars {
+  display: flex;
+  gap: 2px;
+}
+
+.rating__star {
+  color: var(--orange-60);
+  font-size: 11px;
+}
+
+.rating__value {
+  font-family: var(--inter-font);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 0;
+  padding-top: 3px;
+}

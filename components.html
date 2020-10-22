@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopka - Components</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </head>
 
 <body>
@@ -14,9 +14,9 @@
   <!--Search bar-->
   <h3>Search bar</h3>
   <div class="search-bar">
-    <i class="search-bar__search" data-feather="search"></i>
+    <ion-icon class="search-bar__icon search-bar__icon--search" name="search-sharp"></ion-icon>
     <input class="search-bar__input" type="text">
-    <i class="search-bar__close" data-feather="x"></i>
+    <ion-icon class="search-bar__icon search-bar__icon--close" name="close-sharp"></ipn-icon>
   </div>
   <!--Button-->
   <h3>Button</h3>
@@ -35,22 +35,22 @@
   <!--Category icon-->
   <h3>Category icon</h3>
   <div class="category-icon">
-    <i class="category-icon__icon" data-feather="shopping-bag"></i>
+    <ion-icon class="category-icon__icon" name="bag-sharp"></ion-icon>
     <p class="category-icon__text">Clothing & shoes</p>
   </div>
   <!--Icon bar-->
   <h3>Icon bar</h3>
   <div class="icon-bar">
     <div class="category-icon">
-      <i class="category-icon__icon" data-feather="shopping-bag"></i>
+      <ion-icon class="category-icon__icon" name="bag-sharp"></ion-icon>
       <p class="category-icon__text">Clothing & shoes</p>
     </div>
     <div class="category-icon">
-      <i class="category-icon__icon" data-feather="film"></i>
+      <ion-icon class="category-icon__icon" name="videocam-sharp"></ion-icon>
       <p class="category-icon__text">Entertainment</p>
     </div>
     <div class="category-icon">
-      <i class="category-icon__icon" data-feather="music"></i>
+      <ion-icon class="category-icon__icon" name="musical-notes-sharp"></ion-icon>
       <p class="category-icon__text">Music</p>
     </div>
   </div>
@@ -69,9 +69,9 @@
   <h3>Filter tab</h3>
   <div class="filter-tab">
     <input class="filter-tab__input" id="list" type="radio" name="filter-tab" checked>
-    <label class="filter-tab__label" for="list"><i class="filter-tab__icon" data-feather="list"></i></label>
+    <label class="filter-tab__label" for="list"><ion-icon class="filter-tab__icon" name="list-sharp"></ion-icon></label>
     <input class="filter-tab__input"id="grid" type="radio" name="filter-tab">
-    <label class="filter-tab__label" for="grid"><i class="filter-tab__icon" data-feather="grid"></i></label>
+    <label class="filter-tab__label" for="grid"><ion-icon class="filter-tab__icon" name="grid-sharp"></ion-icon></label>
   </div>
   <!--Related tags-->
   <h3>Related tags</h3>
@@ -83,9 +83,25 @@
   </div>
   <!--Card-->
   <h3>Card</h3>
-  <script>
-    feather.replace()
-  </script>
+  <div class="card">
+    <img class="card__image" src="images/items/Image-11.png">
+    <p class="card__content">Vintage Typewriter to post awesome stories about UI design and webdev</p>
+    <p class="card__price">$49.50</p>
+    <p class="card__shipping">Eligible for shipping to Mars or somewhere else</p>
+    <footer class="card__footer">
+      <div class="rating">
+        <div class="rating__stars">
+          <ion-icon class="rating__star" name="star"></ion-icon>
+          <ion-icon class="rating__star" name="star"></ion-icon>
+          <ion-icon class="rating__star" name="star"></ion-icon>
+          <ion-icon class="rating__star" name="star"></ion-icon>
+          <ion-icon class="rating__star" name="star"></ion-icon>
+        </div>
+        <p class="rating__value">4.05</p>
+      </div>
+      <button class="button button--small button--with-icon"><ion-icon name="heart-outline"></ion-icon>Watch</button>
+    </footer>
+  </div>
 </body>
 
 </html>

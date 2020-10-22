@@ -8,6 +8,20 @@
   width: 99px;
   border-radius: 4px;
 }
+
+.button--small {
+  font-size: 14px;
+  height: 32px;
+  width: 88px;
+}
+
+.button--with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
 .button--shadow {
   box-shadow: var(--blue-box-shadow);
   border: none;
