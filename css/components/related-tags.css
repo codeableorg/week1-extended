@@ -1,0 +1,22 @@
+.related-tags {
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.related-tags__title {
+  font-family: var(--inter-font);
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+}
+
+.related-tags__tag {
+  font-family: var(--inter-font);
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 99px;
+  background-color: var(--gray-5);
+  color: var(--gray-70);
+}
