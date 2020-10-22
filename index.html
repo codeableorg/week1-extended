@@ -5,14 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
   <title>Shopka</title>
 </head>
 
 <body>
   <div class="container">
+    <!--header-->
     <header class="header">
       <div class="logo"><img src="images/Logo.png"></div>
-      <div class="search-bar"></div>
+      <div class="search-bar">
+        <i class="search-bar__search" data-feather="search"></i>
+        <input class="search-bar__input" type="text">
+        <i class="search-bar__close" data-feather="x"></i>
+      </div>
       <div class="button-group">
         <button class="button">Sign in</button>
         <button class="button button--shadow">My cart</button>
@@ -21,9 +27,16 @@
         </div>
       </div>
     </header>
-    <nav></nav>
+    <!--nav-->
+    <nav>
+      
+    </nav>
+    <!--main-->
     <main></main>
   </div>
+  <script>
+    feather.replace()
+  </script>
 </body>
 
 </html>

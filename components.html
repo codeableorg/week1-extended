@@ -5,21 +5,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopka - Components</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
   <!--ToDo-->
-  <!--Header-->
   <!--Search bar-->
+  <h3>Search bar</h3>
+  <div class="search-bar">
+    <i class="search-bar__search" data-feather="search"></i>
+    <input class="search-bar__input" type="text">
+    <i class="search-bar__close" data-feather="x"></i>
+  </div>
   <!--Button-->
+  <h3>Button</h3>
+  <button class="button">Sign in</button>
   <!--Button group-->
+  <h3>Button group</h3>
+  <div class="button-group">
+    <button class="button">Sign in</button>
+    <button class="button button--shadow">My cart</button>
+  </div>
   <!--Profile pic-->
-  <!--Icon-->
+  <h3>Profile pic</h3>
+  <div class="profile-pic">
+    <img src="images/Photo.png">
+  </div>
+  <!--Category icon-->
+  <h3>Category icon</h3>
+  <div class="category-icon">
+    <i class="category-icon__icon" data-feather="shopping-bag"></i>
+    <p class="category-icon__text">Clothing & shoes</p>
+  </div>
   <!--Icon bar-->
+  <h3>Icon bar</h3>
+  <div class="icon-bar">
+    <div class="category-icon">
+      <i class="category-icon__icon" data-feather="shopping-bag"></i>
+      <p class="category-icon__text">Clothing & shoes</p>
+    </div>
+    <div class="category-icon">
+      <i class="category-icon__icon" data-feather="film"></i>
+      <p class="category-icon__text">Entertainment</p>
+    </div>
+    <div class="category-icon">
+      <i class="category-icon__icon" data-feather="music"></i>
+      <p class="category-icon__text">Music</p>
+    </div>
+  </div>
   <!--Dropdown-->
+  <h3>Dropdown</h3>
+  <div class="dropdown">
+    <label class="dropdown__label">Sort by</label>
+    <select class="dropdown__select">
+      <option>Useless first</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select>
+  </div>
   <!--Filter tab-->
   <!--Related tags-->
   <!--Card-->
+  <script>
+    feather.replace()
+  </script>
 </body>
 
 </html>

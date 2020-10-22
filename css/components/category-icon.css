@@ -1,0 +1,18 @@
+.category-icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.category-icon__icon {
+  font-size: 20px;
+  color: var(--gray-40);
+}
+
+.category-icon__text {
+  font-family: var(--inter-font);
+  font-size: 14px;
+  color: var(--gray-40);
+  margin: 10px;
+}
