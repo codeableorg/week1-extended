@@ -5,7 +5,7 @@
   font-family: var(--quicksand-font);
   font-size: 20px;
   height: 40px;
-  width: 99px;
+  padding: 0 12px;
   border-radius: 4px;
 }
 
