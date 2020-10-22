@@ -1,0 +1,14 @@
+.button {
+  border: 1px solid var(--blue-70);
+  color: var(--blue-70);
+  background-color: var(--white-100);
+  font-family: var(--quicksand-font);
+  font-size: 20px;
+  height: 40px;
+  width: 99px;
+  border-radius: 4px;
+}
+.button--shadow {
+  box-shadow: var(--blue-box-shadow);
+  border: none;
+}

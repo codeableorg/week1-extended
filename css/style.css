@@ -1,3 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Quicksand:wght@700&display=swap');
-@import 'global.css';
-@import 'page.css';
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Quicksand:wght@700&display=swap");
+@import "global.css";
+@import "components/header.css";
+@import "components/button-group.css";
+@import "components/button.css";
+@import "page.css";
