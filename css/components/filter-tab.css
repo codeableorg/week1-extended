@@ -1,0 +1,33 @@
+.filter-tab {
+  background-color: var(--gray-30);
+  border-radius: 4px;
+  width: 136px;
+  height: 36px;
+  display: flex;
+}
+
+.filter-tab__icon {
+  color: var(--icons-color);
+}
+
+.filter-tab__input {
+  display: none;
+}
+
+.filter-tab__label {
+  background: #fff;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.filter-tab__input:checked + .filter-tab__label {
+  background: var(--white-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.filter-tab__input:checked + .filter-tab__label .filter-tab__icon {
+  color: var(--blue-60);
+}

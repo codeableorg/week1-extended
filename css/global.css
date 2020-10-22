@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Quicksand:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Quicksand:wght@700&display=swap");
 
 :root {
-  --blue-box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
-  --blue-30: #9DC2FF;
-  --blue-60: #2979FF;
-  --blue-70: #2264D1;
-  --gray-5: #EDEDF0;
-  --gray-40: #9696A0;
+  --blue-box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2),
+    0px 4px 8px rgba(41, 121, 255, 0.2);
+  --blue-30: #9dc2ff;
+  --blue-60: #2979ff;
+  --blue-70: #2264d1;
+  --gray-5: #ededf0;
+  --gray-30: #ebf2ff;
+  --gray-40: #9696a0;
   --gray-50: #787885;
-  --gray-70: #4A4B57;
-  --gray-100: #19191D;
-  --white-100: #FFFFFF;
-  --orange-60: #FB8200;
+  --gray-60: #5a5b6a;
+  --gray-70: #4a4b57;
+  --gray-100: #19191d;
+  --white-100: #ffffff;
+  --orange-60: #fb8200;
   --icons-color: #787885;
   --inter-font: "Inter", sans-serif;
   --quicksand-font: "Quicksand", serif;
