@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   <title>Shopka</title>
 </head>
 
 <body>
   <div class="container">
     <!--header-->
-    <header class="header">
+    <header class="flex space-between align-center mb-20">
       <div class="logo"><img src="images/Logo.png"></div>
       <div class="search-bar">
-        <i class="search-bar__search" data-feather="search"></i>
+        <ion-icon class="search-bar__icon search-bar__icon--search" name="search-sharp"></ion-icon>
         <input class="search-bar__input" type="text">
-        <i class="search-bar__close" data-feather="x"></i>
+        <ion-icon class="search-bar__icon search-bar__icon--close" name="close-sharp"></ipn-icon>
       </div>
       <div class="button-group">
         <button class="button">Sign in</button>
@@ -28,15 +28,221 @@
       </div>
     </header>
     <!--nav-->
-    <nav>
-      
+    <nav class="icon-bar my-20">
+      <div class="category-icon">
+        <ion-icon class="category-icon__icon" name="bag-sharp"></ion-icon>
+        <p class="category-icon__text">Clothing & shoes</p>
+      </div>
+      <div class="category-icon">
+        <ion-icon class="category-icon__icon" name="videocam-sharp"></ion-icon>
+        <p class="category-icon__text">Entertainment</p>
+      </div>
+      <div class="category-icon">
+        <ion-icon class="category-icon__icon" name="musical-notes-sharp"></ion-icon>
+        <p class="category-icon__text">Music</p>
+      </div>
+      <div class="category-icon">
+        <ion-icon class="category-icon__icon" name="barbell-sharp"></ion-icon>
+        <p class="category-icon__text">Sport & lifestyle</p>
+      </div>
+      <div class="category-icon">
+        <ion-icon class="category-icon__icon" name="bug-sharp"></ion-icon>
+        <p class="category-icon__text">Pets</p>
+      </div>
+      <div class="category-icon">
+        <ion-icon class="category-icon__icon" name="beer-sharp"></ion-icon>
+        <p class="category-icon__text">Kitchen accesories</p>
+      </div>
+      <div class="category-icon">
+        <ion-icon class="category-icon__icon" name="airplane-sharp"></ion-icon>
+        <p class="category-icon__text">Travel equipment</p>
+      </div>
+      <div class="category-icon">
+        <ion-icon class="category-icon__icon" name="Earth-sharp"></ion-icon>
+        <p class="category-icon__text">Growing & garden</p>
+      </div>
     </nav>
     <!--main-->
-    <main></main>
+    <main class="drop-shadow mb-20 p-20">
+      <div class="flex space-between align-center my-20">
+        <div class="dropdown">
+          <label class="dropdown__label">Sort by</label>
+          <select class="dropdown__select">
+            <option>Useless first</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="filter-tab">
+          <input class="filter-tab__input" id="list" type="radio" name="filter-tab" checked>
+          <label class="filter-tab__label" for="list"><ion-icon class="filter-tab__icon" name="list-sharp"></ion-icon></label>
+          <input class="filter-tab__input"id="grid" type="radio" name="filter-tab">
+          <label class="filter-tab__label" for="grid"><ion-icon class="filter-tab__icon" name="grid-sharp"></ion-icon></label>
+        </div>
+      </div>
+      <div class="related-tags my-20">
+        <p class="related-tags__title">Related</p>
+        <a class="related-tags__tag">worldwide shipping</a>
+        <a class="related-tags__tag">under $50</a>
+        <a class="related-tags__tag">kitten</a>
+      </div>
+      <section class="flex space-between wrap">
+        <div class="card card--1/4">
+          <img class="card__image" src="images/items/Image-11.png">
+          <p class="card__content">Vintage Typewriter to post awesome stories about UI design and webdev</p>
+          <p class="card__price">$49.50</p>
+          <p class="card__shipping">Eligible for shipping to Mars or somewhere else</p>
+          <footer class="card__footer">
+            <div class="rating">
+              <div class="rating__stars">
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+              </div>
+              <p class="rating__value">4.05</p>
+            </div>
+            <button class="button button--small button--with-icon"><ion-icon name="heart-outline"></ion-icon>Watch</button>
+          </footer>
+        </div>
+        <div class="card card--1/4">
+          <img class="card__image" src="images/items/Image-10.png">
+          <p class="card__content">Lee Pucker design. Leather botinki for handsome designers. Free shipping.</p>
+          <p class="card__price">$13.95</p>
+          <p class="card__shipping">1258 bids, 359 watchers $5.95 for shipping</p>
+          <footer class="card__footer">
+            <div class="rating">
+              <div class="rating__stars">
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+              </div>
+              <p class="rating__value">4.56</p>
+            </div>
+            <button class="button button--small button--with-icon"><ion-icon name="heart-outline"></ion-icon>Watch</button>
+          </footer>
+        </div>
+        <div class="card card--1/4">
+          <img class="card__image" src="images/items/Image-9.png">
+          <p class="card__content">Timesaving kitten to save months on development. Playful, cute, cheap!</p>
+          <p class="card__price">$128.99</p>
+          <p class="card__shipping">Eligible for nothing :(</p>
+          <footer class="card__footer">
+            <div class="rating">
+              <div class="rating__stars">
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+              </div>
+              <p class="rating__value">4.87</p>
+            </div>
+            <button class="button button--small button--with-icon"><ion-icon name="heart-outline"></ion-icon>Watch</button>
+          </footer>
+        </div>
+        <div class="card card--1/4">
+          <img class="card__image" src="images/items/Image-8.png">
+          <p class="card__content">Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!</p>
+          <p class="card__price">$12.48</p>
+          <p class="card__shipping">Wordwide shitting available Buyers protection possible!</p>
+          <footer class="card__footer">
+            <div class="rating">
+              <div class="rating__stars">
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+              </div>
+              <p class="rating__value">4.99</p>
+            </div>
+            <button class="button button--small button--with-icon"><ion-icon name="heart-outline"></ion-icon>Watch</button>
+          </footer>
+        </div>
+        <div class="card card--1/4">
+          <img class="card__image" src="images/items/Image-7.png">
+          <p class="card__content">Creativity stimulating lotion. Drink every morning to generate better ideas!</p>
+          <p class="card__price">$12.48</p>
+          <p class="card__shipping">Wordwide shifting available Buyers protection possible!</p>
+          <footer class="card__footer">
+            <div class="rating">
+              <div class="rating__stars">
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+              </div>
+              <p class="rating__value">4.99</p>
+            </div>
+            <button class="button button--small button--with-icon"><ion-icon name="heart-outline"></ion-icon>Watch</button>
+          </footer>
+        </div>
+        <div class="card card--1/4">
+          <img class="card__image" src="images/items/Image-6.png">
+          <p class="card__content">Prototyping items to create a lot if useless things...</p>
+          <p class="card__price">$128.99</p>
+          <p class="card__shipping">Showcasing onHovered state</p>
+          <footer class="card__footer">
+            <div class="rating">
+              <div class="rating__stars">
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+              </div>
+              <p class="rating__value">4.87</p>
+            </div>
+            <button class="button button--small button--with-icon"><ion-icon name="heart-outline"></ion-icon>Watch</button>
+          </footer>
+        </div>
+        <div class="card card--1/4">
+          <img class="card__image" src="images/items/Image-6.png">
+          <p class="card__content">John Von Ebalkin SPRING </p>
+          <p class="card__price">$13.95</p>
+          <p class="card__shipping">1258 bids, 359 watchers $5.95 for shipping</p>
+          <footer class="card__footer">
+            <div class="rating">
+              <div class="rating__stars">
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+              </div>
+              <p class="rating__value">4.56</p>
+            </div>
+            <button class="button button--small button--with-icon"><ion-icon name="heart-outline"></ion-icon>Watch</button>
+          </footer>
+        </div>
+        <div class="card card--1/4">
+          <img class="card__image" src="images/items/Image-5.png">
+          <p class="card__content">Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY</p>
+          <p class="card__price">$9.50</p>
+          <p class="card__shipping">Eligible for shipping to Mars or somewhere else</p>
+          <footer class="card__footer">
+            <div class="rating">
+              <div class="rating__stars">
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+                <ion-icon class="rating__star" name="star"></ion-icon>
+              </div>
+              <p class="rating__value">4.77</p>
+            </div>
+            <button class="button button--small button--with-icon"><ion-icon name="heart-outline"></ion-icon>Watch</button>
+          </footer>
+        </div>
+      </section>
+    </main>
   </div>
-  <script>
-    feather.replace()
-  </script>
 </body>
 
 </html>

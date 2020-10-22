@@ -3,15 +3,20 @@
   padding: 16px;
 }
 
+.card--1\/4 {
+  flex: 1 0 25%;
+}
+
 .card__image {
   width: 100%;
 }
 
 .card__content {
   font-family: var(--inter-font);
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   margin: 0;
+  height: 72px;
 }
 
 .card__price {
@@ -28,6 +33,7 @@
   line-height: 21px;
   color: var(--gray-50);
   margin: 0;
+  height: 42px;
 }
 
 .card__footer {
